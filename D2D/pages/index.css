@@ -1,0 +1,347 @@
+
+
+/*------------------------------------------------*/
+/*------------- BARRE DE NAVIRGATION -------------*/
+/*------------------------------------------------*/
+
+#navigation {
+	background-color: white;
+	color: black;
+		width: 100%;
+}
+
+.nav-item {
+/*	border-bottom: 1px black solid;*/
+	margin-left: 20px;
+	font-size: 20px;
+
+}
+
+.nav-link {
+
+}
+
+#off {
+	width: 25px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+#navbar {
+margin: 0 auto;
+	border-bottom: 8px black solid;
+		width: 73%;
+}
+
+.navbar-collapse{
+	margin-right: 1px;
+
+}
+
+.blanc {
+	color: white;
+}
+
+.dropdown-toggle {
+	margin-top:3px;
+	font-size: 20px;
+	color: black;
+	border: none;
+	background-color: white;
+}
+/*------------------------------------------------*/
+/*------------------ INDEX.PHP -------------------*/
+/*------------------------------------------------*/
+
+.carousel-item {
+	width: 100%;
+	height: 55%;
+	padding: 10px;
+
+}
+
+.d-block{
+		width: 100%;
+	height: 100%;
+}
+
+.carou {
+	margin-top: 40px;
+	border:2px black solid;
+	margin-left: 354px;
+	width: 56.5%;
+
+}
+
+
+
+
+
+
+.contenu_accueil {
+	margin-top: 50px;
+	display: flex;
+	/*border:1px black solid;*/
+}
+
+.col {
+	margin: 0 10px;
+	flex:3;
+	flex-direction: row;
+	border:2px black solid;
+}
+
+.D {
+	padding-left: 25px;
+	flex-direction: column;
+	flex: 1;
+}
+
+
+.G {
+	flex-direction: column;
+	flex: 4;
+}
+
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.div {
+	border:1px black solid;
+		margin: 10 10px;
+	flex-direction: column;
+	flex: 1;
+	/*border:2px red solid;*/
+}
+
+.tit {
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	/*border:1px yellow solid;*/
+	background-color: #57140b;
+	height: 40px;
+
+}
+
+.card-text {
+	text-align: center;
+	line-height: 10px;
+}
+
+#btn_card {
+	border: none;
+	background-color: #57140b;
+	margin-top: 15px;
+	margin-left: 30%;
+}
+
+#carte {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 20%;
+}
+
+#logo {
+	margin-top: -90px;
+	position: fixed;
+}
+
+
+/------------------------------------------------/
+/------------------ INSCRIPTION -------------------/
+/------------------------------------------------/
+.header{                                                / en commun avec connexion/
+background-color: #17202A;
+
+width: 905px;
+height: 15px;
+margin-top:0;
+margin-left: auto;
+margin-right: auto;
+}
+h5{
+	text-align: center;
+	color: white;
+	margin-top:0;
+}
+.contour{
+	margin-top: -27px;
+	margin-left: auto;
+  margin-right: auto;
+  padding-top:0;
+
+}
+
+
+
+h1{
+	color: white;
+	text-align: center;
+
+}
+.containeur {                        / en commun avec connexion/
+
+	border: solid;
+	width: 650px;
+	height: 500px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
+
+.infoperso{
+
+    width: 600px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+}
+
+
+.infolivraison{
+
+    margin-top: 30px;
+    width: 600px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+td{
+	text-align: left;
+
+	padding: 6px;
+
+}
+.input1{
+	float: right;
+}
+.infolivraison{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5PX;
+	}
+.inputadresse{
+	width: 400px;
+}
+.cnt2{
+display: flex;
+justify-content: space-around;
+
+}
+.col-label1{
+padding-left:1px;
+
+}
+.col-input1{
+	margin-left: 21px;
+
+}
+.col-label2{
+margin-left:190px;
+}
+.col-input2{
+	margin-left:10px;
+}
+.inputa{
+	width: 70px
+}
+.inputb{
+	width: 70px
+}
+
+
+
+.submit {          / en commun avec connexion/
+width: 20%;
+border: 1px solid #fff;
+border-radius: 10px;
+padding: 6px 15px;
+margin-left: 250px;
+
+font-size: 18px;
+color: white;
+}
+
+
+input[type="submit"]{
+background: #57140b;
+border: 1px;
+cursor: pointer;
+color: white;
+        }
+input[type="submit"]:hover{
+ background: gray;
+ width: 22%;
+ transition: .6s;
+        }
+
+
+/------------------------------------------------/
+/------------------ CONNECTION -------------------/
+/------------------------------------------------/
+
+.contourconnect{
+	border: solid;
+	width: 900px;
+	height: 650px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-top:0;
+
+}
+.head{
+	background: black;
+	border: solid;
+	width: 650px;
+	height: 60px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+h1{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+.containeur {
+	border: solid;
+	width: 650px;
+	height: 500px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+.table{
+	margin-left: auto;
+    margin-right:auto;
+    margin-top: 150px;
+
+}
+
+td{
+	text-align: left;
+
+	padding: 6px;
+
+}
+.input2{
+	float: right;
+	width: 250px;
+	height: 40px;
+}
+.labelconnect{
+font-weight:bold;
+font-size: 20px;
+}
