@@ -19,7 +19,7 @@ if(!empty($_POST)){
 
 	if(empty($Mail)){
 		$valid = false;
-		$_SESSION['flash']['warning'] = "Veuillez renseigner votre mail !";
+		$_SESSION['flash']['danger'] = "Veuillez renseigner votre mail !";
 	}
 
 	if(empty($Password)){
@@ -40,7 +40,7 @@ if(!empty($_POST)){
 	if($valid){
 
 		//$_SESSION['id'] = $req['id'];
-		$_SESSION['id'] = $req['id'];
+		$_SESSION['id_user'] = $req['id_user'];
 		$_SESSION['nom'] = $req['nom'];
 		$_SESSION['prenom'] = $req['prenom'];
 		$_SESSION['mail'] = $req['mail'];
@@ -48,58 +48,58 @@ if(!empty($_POST)){
 		$_SESSION['adresse'] = $req['adresse'];
 		$_SESSION['code_postale'] = $req['code_postale'];
 		$_SESSION['ville'] = $req['ville'];
+		$_SESSION['rang'] = $req['rang'];
 
 		$_SESSION['flash']['info'] = "Bonjour " . $_SESSION['prenom'];
 		header('Location: ../index.php');
 		exit;
-
 	}
 
 }
 
-var_dump($_SESSION['id']);
 ?>
-
 
 <!DOCTYPE html>
 <html>
 <head>
-	<? php include 'fiche.php' ; ?>
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<title>D2D</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="../index.css">
+	<title>Connexion</title>
 </head>
 <body>
 
-	<div class="contourconnect">
+	<div class="head">
+		<h1>CONNEXION</h1>
+	</div>
 
-	<div class="head"> <h1>CONNEXION</h1> </div>
-<div class="containeur ">
+	<div class="containeuur">
 
-
-
-<form class="con-form" method="post">
-	<table class="table">
-    <tr>
-  	    <td><label class="labelconnect">email </label ><br>
-		<input type="mail" name="Mail" placeholder="Mail" class=" input2" value="<?php if (isset($Mail)) echo $Mail; ?>" required="required"></td>
-   </tr>
-   <tr>
-		<td><label class="labelconnect">mot de passe </label><br>
-			<?php
-				if(isset($error_password)){
+		<form class="con-form" method="post" action="">
+	<div class="top_co">
+			<label>Email :</label>
+<br>
+				<input class="input_co" type="email" name="Mail" placeholder="Mail" value="<?php if (isset($Mail)) echo $Mail; ?>" required="required">
+	</div>
+<br><br>
+		<div class="bot_co">
+ 			<label>Mot de passe : </label>
+       			<?php
+					if(isset($error_password)){
 					echo $error_password."<br/>";
-				}
-			?>
-        <input class="input2" type="password" name="Password" placeholder="Mot de passe" value="<?php if (isset($Password)) echo $Password; ?>" required="required"></td>
+					}
+				?>
+<br>
+                 <input class="input_co" type="password" name="Password" placeholder="Mot de passe" value="<?php if (isset($Password)) echo $Password; ?>" required="required"></td>
+		</div>
+<br><br>
+	  		<input type="submit" value="Se Connecter" class="submiit">
 
-	 </tr>
-	</table><br><br>
-	  <input type="submit" value="S'inscrire" class="submit">
-</form>
-
-
+		</form>
+<br>
+		<a href="../index.php" id="back">Retour à l'accueil</a>
+		<a href="inscription.php" id="back">Inscriver-vous</a>
 </div>
 
-</div>
+
 </body>
 </html>

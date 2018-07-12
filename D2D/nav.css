@@ -1,0 +1,56 @@
+/*------------------------------------------------*/
+/*-------------------- NAV BAR -------------------*/
+/*------------------------------------------------*/
+
+#navigation {
+	width: 100%;
+}
+
+.navbar-nav{
+}
+.navbar-collapse{
+	margin:auto;
+}
+
+#navbar {
+	margin-top: 2%;
+	width: 68%;
+	border-bottom: 8px black solid;
+	background-color: white;
+	z-index: 1;
+	margin-left:18%;
+
+}
+.nav {
+
+justify-content: space-around;
+}
+.nav-item {
+
+	font-size: 20px;
+}
+.nav-link {
+
+}
+
+
+#dropdownMenuButton{
+	margin-top: 7%;
+}
+
+.dropdown-toggle {
+	margin-top:3px;
+	font-size: 20px;
+	color: black;
+	border: none;
+	background-color: white;
+}
+
+#off {
+	width: 25px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+img {
+  width:15%;
+}

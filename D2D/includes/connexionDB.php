@@ -39,5 +39,11 @@ class connexionDB {
         $req=$this->connexion->prepare($sql);
         $req->execute($data);
     }
+
+
+ public function update($sql, $data=array()) {
+        $req=$this->connexion->prepare($sql);
+        $req->execute($data);
+    }
 }
 ?>

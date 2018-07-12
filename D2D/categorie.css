@@ -1,0 +1,57 @@
+/*----------------- DRONE CATEGORIES -----------------*/
+/*------------------------------------------------*/
+
+
+#card_dr {
+margin-top: 150px;
+margin-left: 60px;
+position: relative;
+display: inline-block;
+border:2px black solid;
+width: 360px;
+height: 693px;
+margin-bottom: 1%;
+/*	border: 4px green solid;*/
+}
+
+.card{
+
+text-align: center;
+border: none !important;
+}
+p {
+  font-family: "Roboto";
+}
+h4 {
+  font-family: "Times New Roman";
+}
+
+.infos{
+width: 300px;
+display: flex;
+margin-top: 41px;
+}
+
+#btn_ajout{
+margin-left: 20px;
+font-size: 20px;
+ width: 130px;
+ height: 40px;
+ background-color: #57140b;
+ color: white;
+ border: none;
+}
+
+.btn_descr{
+margin-left: 30px;
+font-size: 20px;
+ width: 130px;
+ height: 40px;
+ background-color: #57140b;
+ color: white;
+ border: none;
+}
+input[type="number"] {
+  width:42px;
+  height: 40px;
+}

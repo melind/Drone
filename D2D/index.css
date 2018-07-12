@@ -1,86 +1,48 @@
-
-
-/*------------------------------------------------*/
-/*------------- BARRE DE NAVIRGATION -------------*/
-/*------------------------------------------------*/
-
-#navigation {
-	background-color: white;
-	color: black;
-		width: 100%;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.nav-item {
-/*	border-bottom: 1px black solid;*/
-	margin-left: 20px;
-	font-size: 20px;
 
+.selector-for-some-widget {
+  box-sizing: content-box;
 }
 
-.nav-link {
 
-}
-
-#off {
-	width: 25px;
-	margin-left: 10px;
-	margin-bottom: 5px;
-}
-
-#navbar {
-margin: 0 auto;
-	border-bottom: 8px black solid;
-		width: 73%;
-}
-
-.navbar-collapse{
-	margin-right: 1px;
-
-}
-
-.blanc {
-	color: white;
-}
-
-.dropdown-toggle {
-	margin-top:3px;
-	font-size: 20px;
-	color: black;
-	border: none;
-	background-color: white;
-}
 /*------------------------------------------------*/
 /*------------------ INDEX.PHP -------------------*/
-/*------------------------------------------------*/
 
-.carousel-item {
-	width: 100%;
-	height: 55%;
-	padding: 10px;
-
+canvas {
+  background: #111;
+  border: 1px solid black;
+  box-shadow: 10px 10px 5px #001;
+  display: block;
+  margin: 40px auto;
+}
+#admin {
+	position: absolute;
+	margin-top: -60px;
+	margin-left: 90%;
 }
 
-.d-block{
-		width: 100%;
-	height: 100%;
+.carousel-item img{
+	width: 100%;
+	height: 400px;
+	padding: 1%;
 }
 
 .carou {
-	margin-top: 40px;
+	margin: 5% auto;
 	border:2px black solid;
-	margin-left: 354px;
-	width: 56.5%;
-
+	width: 50%;
+	height: 50%;
 }
-
-
-
-
-
 
 .contenu_accueil {
 	margin-top: 50px;
 	display: flex;
+	margin-bottom: 1%;
 	/*border:1px black solid;*/
 }
 
@@ -90,28 +52,69 @@ margin: 0 auto;
 	flex-direction: row;
 	border:2px black solid;
 }
+@media screen and (max-width: 992px) {
+	.service li {
+		list-style-type: none;
+	}
+	.G {
+		font-size: 12px;
+		line-height: 10px;
+		font-family: "Roboto";
+	}
+	h6 {
+		font-size: 12px;
+		line-height: 10px;
+		font-family: "Times New Roman";
 
-.D {
-	padding-left: 25px;
+	}
+	h5{
+		font-size: 15px;
+		font-family: "Times New Roman";
+	}
+	.tit {
+		font-size: 20px;
+		font-family: "Times New Roman";
+	}
+	#carte {
+		border: 1px red solid !important;
+		width: 10px;
+		height: 300px;
+	}
+	#logo {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.G {
+	padding-left: 1%;
 	flex-direction: column;
 	flex: 1;
+	height: 700px;
 }
 
 
-.G {
+.D {
+	padding: 0;
+	border: 2px black solid;
 	flex-direction: column;
 	flex: 4;
 }
 
 
-.row {
+.rowp {
 	display: flex;
+	height: 100%;
 	flex-direction: row;
 }
 
 .div {
+	margin-top: 1%;
 	border:1px black solid;
-		margin: 10 10px;
+	margin-right: 2%;
+	margin-left: 15px;
+	width: 100%;
+	height: 98%;
 	flex-direction: column;
 	flex: 1;
 	/*border:2px red solid;*/
@@ -125,56 +128,163 @@ margin: 0 auto;
 	/*border:1px yellow solid;*/
 	background-color: #57140b;
 	height: 40px;
-
+	font-family: "Times New Roman";
+}
+.service li{
+	margin-left: 5%;
 }
 
 .card-text {
+	width: 100%;
 	text-align: center;
 	line-height: 10px;
+	font-family: "Roboto";
 }
 
 #btn_card {
+	margin-top: 10%;
 	border: none;
 	background-color: #57140b;
-	margin-top: 15px;
-	margin-left: 30%;
+	font-family: "Roboto";
+}
+
+#card_dr {
+margin-top: 150px;
+margin-left: 60px;
+position: relative;
+display: inline-block;
+border:2px black solid;
+width: 360px;
+height: 555px;
+/*	border: 4px green solid;*/
+}
+
+.card-img-top {
+margin-top: -99px;
+margin-left: -36px;
+  height: 40%;
+  border-bottom: 1px black solid;
+  width: 355px;
+  height: 250px;
+}
+
+#card_index {
+	width: 100%;
+	margin-left: 0;
+	border: 1px black solid;
+	border-top: none;
+	height: 0%;
+	font-family: "Roboto";
 }
 
 #carte {
-	margin-top: 15px;
-	margin-bottom: 15px;
-	margin-left: 20%;
+	margin-top: 10px;
+	text-align: center;
+	border: 1px black solid;
+	width: 71%;
+	height: 90%;
+	margin-left: 15%;
+	font-family: "Roboto";
 }
 
 #logo {
-	margin-top: -90px;
-	position: fixed;
+	position: absolute;
+	margin-top: -100px;
 }
 
-
-/------------------------------------------------/
-/------------------ INSCRIPTION -------------------/
-/------------------------------------------------/
-.header{                                                / en commun avec connexion/
-background-color: #17202A;
-
-width: 905px;
-height: 15px;
-margin-top:0;
-margin-left: auto;
-margin-right: auto;
+#img_index {
+	border: 1px black solid;
+	margin-top: 0;
+	margin-left: 0;
+	width: 100%;
 }
-h5{
+.sav {
+	margin-top: 40px;
+	line-height: 20px;
+	text-align: center;
+	font-family: "Roboto";
+}
+
+.service {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	font-family: "Roboto";
+}
+
+h5 {
+	height: 40px;
 	text-align: center;
 	color: white;
-	margin-top:0;
+	background-color: #57140b;
+	margin-top: 10px;
+	font-family: "Times New Roman";
 }
-.contour{
-	margin-top: -27px;
+
+li {
+	line-height: 45px;
+}
+/*------------------------------------------------*/
+/*---------------- INSCRIPTION -------------------*/
+/*------------------------------------------------*/
+
+.containeur {
+	border: solid;
+	width: 48%;
 	margin-left: auto;
   margin-right: auto;
-  padding-top:0;
+  margin-top: 2%;
+}
 
+
+.infoperso{ /**/
+
+    width:90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+		border: 3px solid #57140b;
+}
+.infoperso legend{
+	color: #57140b;
+}
+.infox {
+	/*border:1px red solid;*/
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+.npm {
+	text-align: center;
+	flex:1;
+	line-height: 40px;
+	font-family: "Roboto";
+}
+.input {
+	height: 20px;
+	margin-top: 10px;
+	/*border:2px purple solid;*/
+	float: right;
+}
+.mdp {
+	margin-right: 1%;
+	margin-top: -1%;
+	text-align: center;
+	flex:1;
+	line-height: 40px;
+	font-family: "Roboto";
+	/*border:1px green solid;*/
+}
+
+
+#back {
+	margin-left:42%;
+}
+
+#bck {
+	font-size: 10px;
+ 	margin:1%;
 }
 
 
@@ -182,94 +292,82 @@ h5{
 h1{
 	color: white;
 	text-align: center;
-
-}
-.containeur {                        / en commun avec connexion/
-
-	border: solid;
-	width: 650px;
-	height: 500px;
-	margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+	font-family: "Times New Roman";
 
 }
 
+.infolivraison{ /**/
 
-.infoperso{
-
-    width: 600px;
-    height: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-
-}
-
-
-.infolivraison{
-
+		border: 3px solid #57140b;
     margin-top: 30px;
-    width: 600px;
-    height: 100px;
+    width: 90%;
+    height: 50%;
     margin-left: auto;
     margin-right: auto;
-
-}
-td{
-	text-align: left;
-
-	padding: 6px;
-
-}
-.input1{
-	float: right;
-}
-.infolivraison{
-	display: flex;
-	flex-wrap: wrap;
-	padding: 5PX;
+		display: block;
+		padding: 5PX;
 	}
-.inputadresse{
-	width: 400px;
+
+.infolivraison legend{
+	color: #57140b
 }
-.cnt2{
+
+.rowinscri {
+flex-direction: row;
+flex: 1;
 display: flex;
-justify-content: space-around;
-
 }
-.col-label1{
+.colu{
+	flex-direction: column;
+	flex: 1;
+	font-family: "Roboto";
+}
+
+
+.ckeckins{
+	margin-left: 1%;
+}
+.head {                                                /*/ en commun avec connexion/*/
+background-color: #17202A;
+width: 905px;
+height: 15px;
+margin-top:0;
+margin-left: auto;
+margin-right: auto;
+font-family: "Times New Roman";
+}
+
+.col-label1{/**/
 padding-left:1px;
+font-family: "Roboto";
 
 }
-.col-input1{
+
+.col-input1{/**/
 	margin-left: 21px;
+	font-family: "Roboto";
 
 }
-.col-label2{
+.col-label2{/**/
 margin-left:190px;
+font-family: "Roboto";
 }
-.col-input2{
+
+.col-input2{/**/
 	margin-left:10px;
-}
-.inputa{
-	width: 70px
-}
-.inputb{
-	width: 70px
+	font-family: "Roboto";
 }
 
 
-
-.submit {          / en commun avec connexion/
+.submit {          /*/ en commun avec connexion/*/
 width: 20%;
 border: 1px solid #fff;
 border-radius: 10px;
 padding: 6px 15px;
-margin-left: 250px;
-
+margin-left: 39%;
 font-size: 18px;
 color: white;
+font-family: "Roboto";
 }
 
 
@@ -278,70 +376,487 @@ background: #57140b;
 border: 1px;
 cursor: pointer;
 color: white;
+font-family: "Roboto";
         }
 input[type="submit"]:hover{
- background: gray;
- width: 22%;
- transition: .6s;
+ background: grey;
+ width: 26%;
+ transition: 1s;
+ font-family: "Roboto";
         }
+label {
+	font-family: "Roboto";
+}
 
 
-/------------------------------------------------/
-/------------------ CONNECTION -------------------/
-/------------------------------------------------/
-
-.contourconnect{
+/*------------------------------------------------*/
+/*------------------ CONNEXION -------------------*/
+/*------------------------------------------------*/
+.containeuur {
 	border: solid;
-	width: 900px;
-	height: 650px;
+	width: 48%;
+	height: 70%;
 	margin-left: auto;
-    margin-right: auto;
-    padding-top:0;
+	margin-right: auto;
+	margin-top: 20px;
 
 }
+
 .head{
 	background: black;
 	border: solid;
-	width: 650px;
+	width: 48%;
 	height: 60px;
 	margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+	margin-right: auto;
+	margin-top: 50px;
+	font-family: "Times New Roman";
 }
 
 h1{
 	color: white;
 	text-align: center;
 	font-size: 30px;
-}
-.containeur {
-	border: solid;
-	width: 650px;
-	height: 500px;
-	margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-
-}
-.table{
-	margin-left: auto;
-    margin-right:auto;
-    margin-top: 150px;
-
+	font-family: "Times New Roman";
 }
 
-td{
-	text-align: left;
 
-	padding: 6px;
-
+.top_co {
+	margin-top: 70px;
+	font-size: 20px;
+	text-align: center;
+	font-family: "Roboto";
 }
-.input2{
-	float: right;
-	width: 250px;
+
+.bot_co {
+	font-size: 20px;
+	text-align: center;
+	font-family: "Roboto";
+}
+
+.input_co {
+	width: 40%;
 	height: 40px;
+	border: 1px black solid;
+	border-radius: 20px;
+	font-size: 15px;
+	text-align: center;
+	font-family: "Roboto";
 }
-.labelconnect{
-font-weight:bold;
-font-size: 20px;
+
+.submiit {
+	width: 23%;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 6px 15px;
+	margin-left: 39%;
+	font-size: 18px;
+	color: white;
+	font-family: "Roboto";
+}
+
+
+/*------------------------------------------------*/
+/*-------------------- PROFIL --------------------*/
+/*------------------------------------------------*/
+#empty_cart {
+	color: red;
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 40%;
+	font-family: "Times New Roman";
+}
+.tablo{
+	margin-left: 0px;
+	overflow: scroll;
+	height: 350px;
+	width: 530px;
+	overflow-x: hidden;
+}
+
+#tabtab {
+	margin: 0px;
+	width: 100%;
+}
+.row {
+	margin-top:7%;
+	border:1px black solid;
+	width: 80%;
+	height: 60%;
+}
+
+.list-group-item:hover {
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+	background-color: none;
+	font-weight: bold;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+  color:#ffffff;
+  background-color:#57140b;
+  border-color:#57140b;
+	font-family: "Roboto";
+}
+
+.col-4 {
+	padding: 0px;
+	height: 400px;
+	border-right:1px black solid;
+
+}
+
+.container_profil {
+	margin-left: 400px;
+	font-family: "Roboto";
+}
+
+@media screen and (max-width: 992px) {
+	.list-group {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 898px) {
+	.list-group {
+		font-size: 12px;
+	}
+}
+
+.list-group {
+	width: 100%;
+	font-family: "Roboto";
+}
+
+
+.tab-pane {
+	margin-top: 5%;
+	text-align: center;
+	font-family: "Roboto";
+}
+
+#supprimer {
+	margin-top: 20%;
+	background-color: #57140b;
+	border: none;
+	font-family: "Roboto";
+}
+
+#modify {
+	margin-top: 2%;
+	background-color: #57140b;
+	border: none;
+	font-family: "Roboto";
+}
+
+/*------------------------------------------------*/
+/*----------------- MODFY PROFIL -----------------*/
+/*------------------------------------------------*/
+
+.contain_modif {
+	border:1px black solid;
+	width: 50%;
+	margin: -7% auto;
+}
+
+.head_modif {
+	width: 50%;
+	margin: 9% auto;
+	background-color: black;
+	font-family: "Times New Roman";
+}
+
+.modiflivraison {
+	padding: 10px;
+	border:2px black solid;
+	width: 60%;
+	height: 140px;
+	margin: 2% auto;
+	text-align: center;
+	font-family: "Roboto";
+}
+
+.info_modif {
+	float: right;
+	border: 1px black solid;
+	width: 150px;
+	height: 20px;
+	font-family: "Roboto";
+}
+.modif {
+	font-family: "Roboto";
+}
+.span_modif {
+	float: left;
+	font-family: "Roboto";
+}
+
+#modif {
+	width: 150px;
+	height: 30px;
+	border-radius: 30px;
+	font-size: 15px;
+	margin-left: 40%;
+	font-family: "Roboto";
+}
+
+/*------------------------------------------------*/
+/*-------------------- PANIER --------------------*/
+/*------------------------------------------------*/
+
+
+
+.txt-heading {
+    background-color: #57140b;
+    color: white;
+    width: 57%;
+    height: 60px;
+		margin-left: 21%;
+		margin-top: 1%;
+    position: relative;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+		font-family: "Times New Roman";
+
+}
+
+#vider_panier {
+    border: 2px pink solid;
+    width: 150px;
+    height: 100px;
+		font-family: "Roboto";
+
+}
+
+.table {
+		margin-left: 15%;
+		width: 70%;
+		height: 50px;
+		border: 1px black solid;
+		font-family: "Roboto";
+}
+
+#continuer_shop {
+/*	border: 2px green solid;*/
+    width: 210px;
+    height: 62px;
+    background-color:  #57140b;
+    color: white;
+    font-size: 20px;
+		border-radius: 50px;
+		float: right;
+		margin-right: 23%;
+		font-family: "Roboto";
+}
+
+#valider {
+/*border: 2px blue solid;*/
+    width: 210px;
+    height: 62px;
+    background-color:  #57140b;
+    color: white;
+    font-size: 20px;
+		border-radius: 50px;
+		margin-left: 23%;
+		font-family: "Roboto";
+		margin-bottom: 1%;
+}
+.achat {
+		margin-top: 1%;
+    height: 49%;
+    width: 70%;
+    position: absolute;
+		margin-left: 15%;
+		overflow: scroll;
+		overflow-x: hidden;
+		font-family: "Roboto";
+/*border: 1px red solid;*/
+}
+
+
+.btn_pan {
+	margin-top: 27%;
+	width: 70%;
+	margin-left: 15%;
+	/*border: 1px orange solid;*/
+	position: relative;
+	font-family: "Roboto";
+
+}
+
+.total span {
+	color: red;
+	float: right;
+}
+.total {
+	margin-left: 30%;
+	transform: translate(50%);
+	font-size: 23px;
+  height: 50px;
+  width: 20%;
+	font-family: "Roboto";
+}
+
+.imgp {
+  width: 3%;
+}
+.imgt {
+  width: 5%;
+}
+/*------------------------------------------------*/
+/*-------------------- PAYMENT -------------------*/
+/*------------------------------------------------*/
+
+
+.payment {
+	text-align: center;
+	border: 2px black solid;
+	width: 50%;
+	margin: 250px auto;
+	font-family: "Roboto";
+}
+
+
+/*------------------------------------------------*/
+/*----------------- PANEL ADMIN ------------------*/
+/*------------------------------------------------*/
+
+h2 {
+	font-family: "Times New Roman";
+}
+
+.pan_admin {
+	display: flex;
+	width: 70%;
+	margin: 0 auto;
+	/*border: 3px red solid;*/
+	padding: 10px;
+}
+
+#left {
+	width: 70%;
+	/*border: 1px black solid;*/
+}
+
+#right {
+	width: 70%;
+	/*border: 1px black solid;*/
+	margin-left: 1%;
+}
+
+#show_left {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	font-family: "Roboto";
+}
+
+#show_right {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-family: "Roboto";
+	background-color: black;
+	color: white;
+}
+
+#form_product {
+	font-weight: bold;
+	width: 100%;
+
+}
+
+#form_product input, select{
+	width: 200px;
+	border: 1px black solid;
+	float: right;
+}
+
+#form_rank {
+	font-weight: bold;
+	width: 100%;
+
+}
+
+
+#form_rank input{
+width: 200px;
+	border: 1px black solid;
+	float: right;
+}
+
+.administration {
+	text-align: center;
+	margin-top: 10%;
+}`
+/*------------------------------------------------*/
+/*---------------- AFFICHER PRODUIT -------------------*/
+/*------------------------------------------------*/
+.cardf {
+	margin-top: 8%;
+	margin-bottom: 2%;
+	height: 105%;
+}
+
+.cb {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.tinypictures {
+flex:1;
+/*border: 2px blue solid;*/
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.tiny {
+	height: 20%;
+}
+
+.tiny img {
+	width:75%;
+	height: 88%;
+	border: 2px #57140b solid;
+	margin-left: 13%;
+	margin-top: 4%;
+}
+
+.tiny:hover {
+background-color: #57140b;
+}
+
+.bigpicture {
+flex: 3;
+/*border: 2px yellow solid;*/
+}
+
+.bigpicture img{
+width: 100%;
+height: 93%;
+}
+
+.comment {
+flex: 4;
+padding-left: 3%;
+/*border: 2px blue solid;*/
+}
+
+.select {
+	height: 10%;
+	width: 57%;
+}
+.nom {
+	margin-top: 5%;
+}
+
+.carac {
+	width: 81%;
+  margin-bottom: 1%;
+	margin-left: 9%;
 }
